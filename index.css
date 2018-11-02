@@ -33,6 +33,9 @@ header, footer, article, section, aside {
 .feature {
   width: 300px;
 }
+.feature:hover{
+  border: 1px solid rgb(201, 27, 16);
+}
 
 .button {
   border-radius: 25px;
@@ -98,6 +101,9 @@ header, footer, article, section, aside {
   margin: 10px;
   border: 1px solid black;
 }
+.inside-division:hover{
+  border:1px solid rgb(201, 27, 16);
+}
 
 .card-img-wrap img {
   transition: transform .25s;
@@ -118,9 +124,6 @@ header, footer, article, section, aside {
   color:white;
 }
 
-.on-image-top:hover div {
-  transform: scale(1.2);
-}
 
 .wrapping-div {
   position: relative;
@@ -131,6 +134,10 @@ header, footer, article, section, aside {
   font-weight: bold;
   font-size: 18px;
 }
+.on-image-top:hover p {
+  transform: scale(1.2);
+}
+
 .footer-img{
   max-width: 70PX;
   max-height: 70PX;
