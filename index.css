@@ -26,18 +26,18 @@ header, footer, article, section, aside {
 
 .feature-container {
   border: 1px solid rgb(200, 195, 201);
-  margin: 100px 0 10px 0;
-  padding: 30px;
+  padding: 10px;
 }
 
-.feature {
-  width: 300px;
-}
-.feature:hover{
+.feature-container:hover{
   border: 1px solid rgb(201, 27, 16);
 }
 
-.button {
+.feature-img {
+  width: 100px;
+  max-height: 100px;
+}
+.show-more {
   border-radius: 25px;
   background-color: #d5cdcd;
 }
@@ -94,11 +94,10 @@ header, footer, article, section, aside {
 .fa {
   font-size: 40px;
 }
-
+.calander {
+  height: 100px;
+}
 .inside-division {
-  max-height: 150px;
-  padding: 35px;
-  margin: 10px;
   border: 1px solid black;
 }
 .inside-division:hover{
@@ -215,4 +214,26 @@ display: inline-block;;
 }
 .carousel{
   z-index: auto !important;
+}
+
+@media screen and (max-width: 576px) {
+  .inside-division {
+    width: 300px;
+  }
+  .show-more-container {
+    text-align: center;
+  }
+  .feature-container {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 347px) {
+  .feature-container {
+    width: 200px;
+  }
+
+  .feature-img {
+    width: 80px;
+  }
 }
